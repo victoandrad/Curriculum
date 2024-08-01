@@ -12,7 +12,7 @@
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
-    gap: 1em;
+    gap: 2em;
 }
 
 .footer-data {
@@ -29,9 +29,18 @@
     font-weight: 300;
 }
 
+.footer-data-content-icons {
+    font-size: 1.5em;
+    display: inline-block;
+}
+
 /* MEDIA QUERY */
 
 @media screen and (max-width: 1000px) {
+    .footer {
+        flex-flow: column nowrap;
+
+    }
     .footer-data {
         align-items: center;
     }
