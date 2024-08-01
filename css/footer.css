@@ -1,13 +1,18 @@
 @import url(variables.css);
 
 .footer {
+    width: 100%;
+    min-height: 12vh;
+    padding: 2em;
+
+    border-top: 1px solid rgb(202, 202, 202);
+    background-color: var(--backgroundColor);
+    
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
-    min-height: 12vh;
     gap: 1em;
-    border-top: 1px solid rgb(202, 202, 202);
 }
 
 .footer-data {

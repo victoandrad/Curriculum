@@ -1,5 +1,8 @@
 @import url(variables.css);
 
 .hero {
+    width: 100%;
     min-height: 76vh;
+    /* padding-bottom: 10000px; */
+    margin-top: 12vh;
 }

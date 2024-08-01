@@ -1,23 +1,26 @@
 @import url(variables.css);
 
 .header {
-    padding: 0 2em;
+    width: 100%;
     height: 12vh;
-    width: 100vw;
+    padding: 0 2em;
+
+    background-color: var(--backgroundColor);
+    border-bottom: 1px solid rgb(202, 202, 202);
 
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
 
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
-    border-bottom: 1px solid rgb(202, 202, 202);
+    z-index: 1000;
 }
 
 .header-name {
-    font-size: 24px;
+    font-size: 1.5rem;
     display: flex;
     align-items: flex-end;
     letter-spacing: 1px;
@@ -56,10 +59,9 @@
 
 .header-nav-list li a {
     display: block;
-    font-size: 16px;
+    font-size: 1rem;
     border-right: 1px solid var(--textColor);
-    padding: 0 1em;
-    width: 100%;
+    padding: 0 1rem;
     font-weight: 700;
     transition: color 0.3s;
     letter-spacing: 1px;
@@ -81,15 +83,15 @@
 }
 
 .header-nav-mobile div {
-    width: 33px;
-    height: 3px;
-    margin: 7.5px;
+    width: 22px;
+    height: 2px;
+    margin: 5px;
     background-color: var(--themeColor);
     transition: all 0.3s ease-in-out;
 }
 
 .header-nav-mobile.active .line1 {
-    transform: rotate(45deg) translate(7.5px, 7.5px);
+    transform: rotate(45deg) translate(5px, 5px);
 }
 
 .header-nav-mobile.active .line2 {
@@ -97,7 +99,7 @@
 }
 
 .header-nav-mobile.active .line3 {
-    transform: rotate(-45deg) translate(7.5px, -7.5px);
+    transform: rotate(-45deg) translate(5px, -5px);
 }
 
 /* MEDIA QUERY */
