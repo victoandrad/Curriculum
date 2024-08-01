@@ -1,0 +1,10 @@
+
+.title-square::before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-color: var(--themeColor);
+    margin-right: 0.5em;
+    border-radius: 0.25em;
+}

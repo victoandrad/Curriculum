@@ -1,0 +1,5 @@
+@import url(variables.css);
+
+.hero {
+    min-height: 76vh;
+}
