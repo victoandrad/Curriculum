@@ -1,5 +1,16 @@
 @import url(variables.css);
 
+@keyframes animationLink {
+    from {
+        opacity: 0;
+        transform: translate(100px, -100px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
 .header {
     width: 100%;
     height: 12vh;
@@ -143,6 +154,10 @@
     .header-nav-list.active {
         clip-path: circle(300vh at 90% -15%);
         pointer-events: visible;
+    }
+
+    .header-nav-list li {
+        opacity: 0;
     }
 
     .header-nav-list li a {

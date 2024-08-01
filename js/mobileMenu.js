@@ -7,9 +7,20 @@ class NavBar {
         this.activeClass = "active";
     };
 
+    animateLinks() {
+        this.navListLinks.forEach((link, index) => {
+            if(link.style.animation) {
+                link.style.animation = ""
+            } else {
+                link.style.animation = `animationLink 0.3s ease-in forwards ${index * 0.3}s`
+            }
+        });
+    };
+
     handleClick() {
         this.mobileMenu.classList.toggle(this.activeClass);
         this.navList.classList.toggle(this.activeClass);
+        this.animateLinks();
     };
 
     addClickEvent() {
@@ -26,7 +37,7 @@ class NavBar {
 const navBar = new NavBar(
     ".header-nav-mobile",
     ".header-nav-list",
-    ".header.nav-list li"
+    ".header-nav-list li"
 );
 
 navBar.init();
