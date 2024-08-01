@@ -9,14 +9,9 @@
     font-size: 1em;
 }
 
-html, body {
-    width: 100dvw;
-    height: 100dvh;
-    background-color: #F3F3F3;
-}
-
 body {
     overflow-x: hidden;
+    background-color: #F3F3F3;
 }
 
 button {
