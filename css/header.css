@@ -97,7 +97,7 @@
     width: 22px;
     height: 2px;
     margin: 5px;
-    background-color: var(--themeColor);
+    background-color: var(--textColor);
     transition: all 0.3s ease-in-out;
 }
 
